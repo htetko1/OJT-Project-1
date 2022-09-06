@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+:root{
+    --main-color:#02019D;
+    --secondary-color:#303030;
+    --third-color:#26266E;
+    --four-color:#F7F7F7;
+    --five-color:#333333;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','Montserrat', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+body{
+
+}
+.head1{
+    background-color:var(--main-color);
+    /*color: #0d6efd;*/
+}
+/*.site-nav {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    background-color: white;*/
+/*    z-index: 50;*/
+/*}*/
+/*.site-nav-scroll {*/
+/*    position: fixed;*/
+/*    background-color: #ffffffee;*/
+/*    backdrop-filter: blur(5px);*/
+/*    box-shadow: 0 0 5px #00000020;*/
+/*    animation: toShow 1s linear;*/
+/*}*/
+/*@keyframes toShow {*/
+/*    from {*/
+/*        transform: translateY(-200px);*/
+/*    }*/
+/*    to {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
+/*.home {*/
+/*    position: relative;*/
+/*}*/
+
+.carousel-caption{position:absolute;right:15%;bottom:13rem;left:15%;padding-top:1.25rem;padding-bottom:1.25rem;color:#fff;text-align:center !important;}
+
+.gse{
+    font-family:  'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 50px;
+}
+
+.ac{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.prevIcon,.nextIcon{
+    border: 1px solid var(--main-color);
+    width: 30px;
+    height: 100px;
+    background-color: var(--main-color);
+}
+
+.cycle.active{
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid white !important;
+   background-color: var(--main-color) !important;
+}
+.cycle{
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid white !important;
+    border-radius: 50% !important;
+}
+/*.cycles{*/
+/*    !*border: 0 !important;*!*/
+/*    background: transparent !important;*/
+/*    display: block !important;*/
+/*    height: 20px !important;*/
+/*    width: 20px !important;*/
+/*    !*outline: none;*!*/
+/*    !*line-height: 0px;*!*/
+/*    !*font-size: 0px;*!*/
+/*    color: transparent !important;*/
+/*    padding: 5px !important;*/
+/*}*/
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px !important;
+    height: 15px !important;
+    /*background: transparent !important;*/
+    /*background-color: var(--main-color);*/
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+
+}
+.our{
+    font-family: 'Poppins',  sans-serif;
+    /*font-weight: lighter;*/
+}
+.img>img{
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+}
+.our-com{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centerd{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centerd>p{
+    line-height: 30px;
+}
+.centerd>button{
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+}
+.project-img{
+    width: 100%;
+    margin: 10px 10px;
+}
+.footer-bg{
+    background-color: var(--secondary-color);
+}
+.foot-para{
+    line-height: 25px;
+    /*letter-spacing: 1px;*/
+    font-size: 15px;
+    word-spacing: 10px;
+}
+.home-icon{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+a.lyrion{
+    color: #D4D638;
+}
+.alignMin{
+    width: 100px;
+    height: 5px;
+    border: 1px solid var(--third-color);
+    background-color: var(--third-color);
+    margin: 30px 0px 40px 0px;
+}
+.about-p{
+    font-family: 'Poppins',  sans-serif;
+    line-height: 25px;
+    /*word-spacing: 0.3px;*/
+}
+.about-us{
+    background-color: var(--four-color);
+    font-family:'Montserrat', sans-serif;
+    line-height: 30px;
+}
+.activity-img{
+    width: 100%;
+    margin: 30px 5px 1px;
+    padding: 10px;
+}
+.contact{
+    line-height: 40px;
+}
+.send-btn{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img>img{
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+    }
+    .centerd{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .centerd>h1{
+        /*font-size: 30px !important;*/
+    }
+    .centerd>p{
+        line-height: 20px;
+        font-size: 10px;
+    }
+    .centerd>button{
+        width: 120px;
+        height: 40px;
+        border: none;
+        background-color: var(--main-color);
+        color: white;
+    }
+}
